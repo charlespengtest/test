@@ -9,9 +9,6 @@ pipeline {
     stage('构建') {
       steps {
         echo '构建中...'
-        }
-
-        archiveArtifacts(artifacts: 'README.md', fingerprint: true)
       }
     }
     stage('测试') {
