@@ -4,17 +4,20 @@ pipeline {
     stage('检出') {
       steps {
         echo '检出'
+        sleep 10
       }
     }
     stage('构建') {
       steps {
         echo '构建中...'
+        sleep 10
       }
     }
     stage('测试') {
       steps {
         echo '单元测试中...'
         echo '单元测试完成.'
+        sleep 10
       }
     }
     stage('部署') {
