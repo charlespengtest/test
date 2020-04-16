@@ -4,7 +4,7 @@ pipeline {
     stage('检出') {
       steps {
         echo '检出'
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'b6d49509-3755-43f1-99b3-a73c22a53ef5', url: 'https://github.com/charlespeng7/PLTest']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '067d607844702dd3f6400e6ac76d09ccc8395c2e', url: 'https://github.com/charlespeng7/PLTest']]])
         sleep 10
       }
     }
